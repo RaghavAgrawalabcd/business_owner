@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.App{
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    background-color: #424345;
+    margin-left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .Questions{
+    display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .Questions a{
+    margin: 20px;
+    width: 80px;
+    height: 30px;
+    background: #2696F8;
+    border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.App .Questions a h4{
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 22px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .Questions a:hover{
+    cursor: pointer;
+    background: #6543B4;
 }
