@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       {(() => {
-        console.log(state)
         if (state === "Business Owner") {
           return (
             <div>
@@ -26,6 +25,15 @@ function App() {
               <div className="Questions">
               <a onClick={()=> dispatch(NOTLOCATEDINUS())}><h4>NO</h4></a>
               <a onClick={()=> dispatch(LOCATEDINUS())}><h4>YES</h4></a>
+            </div>
+            </div>
+          )
+        }
+        else if (state === "Access Denied Error") {
+          return (
+            <div>
+                <h3>{state}</h3>
+              <div className="Questions">
             </div>
             </div>
           )
@@ -108,17 +116,6 @@ function App() {
           return (
             <div>
                 <h3>{state}</h3>
-            </div>
-          )
-        }
-           else if (state === "Located in Us") {
-          return (
-            <div>
-                <h3>{state}</h3>
-              <div className="Questions">
-              <a onClick={()=> dispatch(NOTLOCATEDINUS())}><h4>NO</h4></a>
-              <a onClick={()=> dispatch(LOCATEDINUS())}><h4>YES</h4></a>
-            </div>
             </div>
           )
         }
